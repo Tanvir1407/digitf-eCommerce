@@ -7,7 +7,6 @@ nav{
     justify-items: center;
 }
 nav .logo img{
-    margin-top:20px ;
     padding-left:15px ;
     width: 80%;
 }
@@ -15,13 +14,18 @@ nav .logo img{
     border: none;
     background-color: transparent;
 }
-.nav-toggler  img{
-    height: 50px;
-    width: 50px;
+.toggler-open{
+    display: block !important;
+    transition: display 2s ;
+}
+
+.nav-toggler  i{
+    height:50px;
+    width:50px;
 }
 .link__container .nav__link{
     text-align: center;
-    /* display: none; */
+    display: none;
 }
 .link__container .nav__link ul {
     padding: 0;
@@ -31,8 +35,12 @@ nav .logo img{
     padding: 10px 0px;
     font-size: 17px;
 }
-.link__container .nav__link li:active{
-    color: green;
+.link__container .nav__link a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.697);
+}
+a:is(:link,:active,:visited).active{
+    color: #27cd77;
 }
 .nav__right{
     visibility: hidden;
