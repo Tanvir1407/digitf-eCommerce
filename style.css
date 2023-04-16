@@ -400,10 +400,10 @@ a:is(:link,:active,:visited).active{
     transform: translate(100%, -50%);
 }
 .testimonial__card{
-    padding: 40px 20px;
+    padding: 20px 20px;
     margin: 20px;
-    background-color:#f7f7f9;
     border-radius: 5px;
+    box-shadow: 1px 1px 10px 4px #f1f0f0;
 }
 .body__text {
     position: relative;
@@ -417,7 +417,9 @@ a:is(:link,:active,:visited).active{
     z-index: 1;    
 }
 .testimonial__card:hover{
-    box-shadow: 1px 1px 5px 1px #e2e2e2;
+    background-color:#f7f7f9;
+    box-shadow: 0px 0px 0px 0px #ffffff;
+
 }
 .testimonial__card:hover .green_arrow{
     display: inline;
@@ -427,7 +429,7 @@ a:is(:link,:active,:visited).active{
 }
 .head{
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
 }
 .head_text_box{
@@ -469,9 +471,7 @@ a:is(:link,:active,:visited).active{
     margin-top: 40px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    
+    align-items: center;    
  }
  
  .contact{
@@ -485,7 +485,9 @@ a:is(:link,:active,:visited).active{
  .contact img{
     width: 100%;
  }
- 
+.footer__header{
+    text-align: center;
+}
 .info_info{
     margin:40px 0px ;
 }
@@ -582,6 +584,31 @@ a:is(:link,:active,:visited).active{
     .contact__section{
         padding-left: 100px;
         padding-right: 100px;
-        
+
+    }
+
+    .testimonial_section{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .testimonial_box{
+        display: flex;
+    }
+    .info__container{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .info{
+        flex-direction: row; 
+        align-items: start;
+    }
+    .info_contact,.info_info,.info_insta,.info__newsLetter{
+        width: 25%;
+    }
+    .info_info{
+        margin: 0;
+    }
+    .footer__section{
+        text-align: start;
     }
 }
