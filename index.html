@@ -25,53 +25,85 @@
   </head>
 
   <body>
-    <!-- hero area   -->
-    <div id="home">
-      <!-- header section start -->
-      <header>
-        <nav>
-          <div class="logo">
-            <img src="/images/Logo.png" alt="logo" />
-          </div>
-          <div>
-            <button class="nav-toggler">
-              <i class="fa-solid fa-bars"></i>
-            </button>
-          </div>
-        </nav>
-        <!-- nav link -->
-        <div class="link__container">
-          <div class="nav__link">
-            <ul>
-              <li><a href="/index.html">HOME</a></li>
-              <li><a href="/about.html">ABOUT</a></li>
-              <li><a href="/shop.html">SHOP</a></li>
-              <li><a href="/furniture.html">FURNITURE</a></li>
-              <li><a href="/contact.html">CONTACT US</a></li>
-            </ul>
-            <div class="nav__right">
-              <span class="login">
-                <img src="/images/user.png" />
-                <span>Login</span>
-              </span>
-              <span class="search">
-                <img src="/images/search-icon.png" />
-              </span>
+    <!--------------------------------------------------
+    -----------------------hero area--------------------
+    --------------------------------------------------->
+    <section class="hero__section">
+      <div id="home">
+        <!-- header section start -->
+        <header>
+          <nav>
+            <div class="logo">
+              <img src="/images/Logo.png" alt="logo" />
+            </div>
+            <div>
+              <button class="nav-toggler">
+                <i class="fa-solid fa-bars"></i>
+              </button>
+            </div>
+          </nav>
+          <!-- nav link -->
+          <div class="link__container">
+            <div class="nav__link">
+              <ul>
+                <li><a href="/index.html">HOME</a></li>
+                <li><a href="/about.html">ABOUT</a></li>
+                <li><a href="/shop.html">SHOP</a></li>
+                <li><a href="/furniture.html">FURNITURE</a></li>
+                <li><a href="/contact.html">CONTACT US</a></li>
+              </ul>
+              <div class="nav__right">
+                <span class="login">
+                  <img src="/images/user.png" />
+                  <span>Login</span>
+                </span>
+                <span class="search">
+                  <img src="/images/search-icon.png" />
+                </span>
+              </div>
             </div>
           </div>
-        </div>
-      </header>
-      <!-- end header section -->
+        </header>
+        <!-- end header section -->
 
-      <!-- carousel start -->
-      <div class="carousel__box">
-        <div
-          id="carouselExampleSlidesOnly"
-          class="carousel slide"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-inner">
-            <div class="carousel-item active">
+        <!-- carousel start -->
+        <div class="carousel__box">
+          <div
+            id="carouselExampleSlidesOnly"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="features_card">
+                  <div class="card__info">
+                    <h1>
+                      THE LATEST <br />
+                      <span>FURNITURE</span>
+                    </h1>
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Numquam adipisci labore ad, odio quis autem!.
+                    </p>
+                    <div class="d-lg-flex ">
+                      <button class="btn m-lg-2">READ MORE</button> <br />
+                      <button class="btn black_btn m-lg-2">CONTACT US</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="features_card">
+                  <div class="img__box">
+                    <div class="card__img">
+                      <img
+                        src="/images/slider-img.png"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="carousel-item">
               <div class="card__info">
                 <h1>
                   THE LATEST <br />
@@ -139,43 +171,23 @@
                   />
                 </div>
               </div>
-            </div>
-            <div class="carousel-item">
-              <div class="card__info">
-                <h1>
-                  THE LATEST <br />
-                  <span>FURNITURE</span>
-                </h1>
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Numquam adipisci labore ad, odio quis autem!.
-                </p>
-                <button class="btn">READ MORE</button> <br />
-                <button class="btn black_btn">CONTACT US</button>
-              </div>
-              <div class="img__box">
-                <div class="card__img">
-                  <img
-                    src="/images/slider-img.png"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-              </div>
+            </div> -->
             </div>
           </div>
-        </div>
 
-        <button class="play__button">
-          <img src="/images/play.png" alt="play" />
-        </button>
-        <!-- carousel end -->
+          <button class="play__button">
+            <img src="/images/play.png" alt="play" />
+          </button>
+          <!-- carousel end -->
+        </div>
       </div>
-    </div>
-    <!-- hero area -->
+    </section>
+    <!--------------------------------------------------
+    -------------------hero area------------------------
+    --------------------------------------------------->
 
     <!-------------------------------------------------
-      ---------------- about section start --------------------
+    ---------------- about section start --------------
     -------------------------------------------------->
     <section class="about__container row align-items-lg-center">
       <div class="details__box col-md-6">
@@ -194,9 +206,9 @@
         <img src="/images/about-img.png" />
       </div>
     </section>
-    <!----------------------------------------------------
-    ---------------------about end------------------------
-    ----------------------------------------------------->
+    <!-------------------------------------------------
+    ------------------about section end----------------
+    -------------------------------------------------->
 
     <!------------------------------------------------
     -------------Trending Categories start------------
@@ -280,57 +292,57 @@
       <h1>Featured Brands</h1>
       <div class="featured__brands row">
         <div class="col-md-6 col-lg-3">
-          <div class="box ">
-          <a href="#">
-            <div class="img_box">
-              <img src="/images/slider-img.png" alt="" />
-            </div>
-            <div class="details_box">
-              <h5 class="price">$100</h5>
-              <h5>chair</h5>
-            </div>
-          </a>
-          <p class="new_tag">New</p>
+          <div class="box">
+            <a href="#">
+              <div class="img_box">
+                <img src="/images/slider-img.png" alt="" />
+              </div>
+              <div class="details_box">
+                <h5 class="price">$100</h5>
+                <h5>chair</h5>
+              </div>
+            </a>
+            <p class="new_tag">New</p>
           </div>
         </div>
         <div class="col-md-6 col-lg-3">
           <div class="box">
-          <a href="#">
-            <div>
-              <img src="/images/slider-img.png" alt="" />
-            </div>
-            <div class="details_box">
-              <h5 class="price">$100</h5>
-              <h5>chair</h5>
-            </div>
-          </a>
-        </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="box">
-          <a href="#">
-            <div>
-              <img src="/images/slider-img.png" alt="" />
-            </div>
-            <div class="details_box">
-              <h5 class="price">$100</h5>
-              <h5>chair</h5>
-            </div>
-          </a>
-        </div>
+            <a href="#">
+              <div>
+                <img src="/images/slider-img.png" alt="" />
+              </div>
+              <div class="details_box">
+                <h5 class="price">$100</h5>
+                <h5>chair</h5>
+              </div>
+            </a>
+          </div>
         </div>
         <div class="col-md-6 col-lg-3">
           <div class="box">
-          <a href="#">
-            <div>
-              <img src="/images/slider-img.png" alt="" />
-            </div>
-            <div class="details_box">
-              <h5 class="price">$100</h5>
-              <h5>chair</h5>
-            </div>
-          </a>
+            <a href="#">
+              <div>
+                <img src="/images/slider-img.png" alt="" />
+              </div>
+              <div class="details_box">
+                <h5 class="price">$100</h5>
+                <h5>chair</h5>
+              </div>
+            </a>
+          </div>
         </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="box">
+            <a href="#">
+              <div>
+                <img src="/images/slider-img.png" alt="" />
+              </div>
+              <div class="details_box">
+                <h5 class="price">$100</h5>
+                <h5>chair</h5>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
       <div class="btn_more">
@@ -380,57 +392,57 @@
       <div class="testimonial_box row">
         <div class="col-md-6">
           <div class="testimonial__card">
-          <div class="head">
-            <div>
-              <img src="/images/client-1.png" />
+            <div class="head">
+              <div>
+                <img src="/images/client-1.png" />
+              </div>
+              <div class="head_text_box">
+                <h3>magna</h3>
+                <p>Consectetur adipiscing</p>
+              </div>
             </div>
-            <div class="head_text_box">
-              <h3>magna</h3>
-              <p>Consectetur adipiscing</p>
+            <div class="body__text">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Reprehenderit officiis consequuntur facilis sequi pariatur.
+                Officia quaerat, inventore veritatis culpa dignissimos amet
+                alias deserunt modi temporibus!
+              </p>
+              <img src="/images/arrow.png" class="arrow" alt="arrow" />
+              <img
+                src="/images/arrow-green.png"
+                class="green_arrow"
+                alt="arrow"
+              />
             </div>
           </div>
-          <div class="body__text">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Reprehenderit officiis consequuntur facilis sequi pariatur.
-              Officia quaerat, inventore veritatis culpa dignissimos amet alias
-              deserunt modi temporibus!
-            </p>
-            <img src="/images/arrow.png" class="arrow" alt="arrow" />
-            <img
-              src="/images/arrow-green.png"
-              class="green_arrow"
-              alt="arrow"
-            />
-          </div>
-        </div>
         </div>
         <div class="col-md-6">
           <div class="testimonial__card">
-          <div class="head">
-            <div>
-              <img src="/images/client-2.png" />
+            <div class="head">
+              <div>
+                <img src="/images/client-2.png" />
+              </div>
+              <div class="head_text_box">
+                <h3>Aliqua</h3>
+                <p>Consectetur adipiscing</p>
+              </div>
             </div>
-            <div class="head_text_box">
-              <h3>Aliqua</h3>
-              <p>Consectetur adipiscing</p>
+            <div class="body__text">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Reprehenderit officiis consequuntur facilis sequi pariatur.
+                Officia quaerat, inventore veritatis culpa dignissimos amet
+                alias deserunt modi temporibus!
+              </p>
+              <img src="/images/arrow.png" class="arrow" alt="arrow" />
+              <img
+                src="/images/arrow-green.png"
+                class="green_arrow"
+                alt="arrow"
+              />
             </div>
           </div>
-          <div class="body__text">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Reprehenderit officiis consequuntur facilis sequi pariatur.
-              Officia quaerat, inventore veritatis culpa dignissimos amet alias
-              deserunt modi temporibus!
-            </p>
-            <img src="/images/arrow.png" class="arrow" alt="arrow" />
-            <img
-              src="/images/arrow-green.png"
-              class="green_arrow"
-              alt="arrow"
-            />
-          </div>
-        </div>
         </div>
       </div>
     </section>
@@ -510,7 +522,10 @@
       </div>
       <div>
         <p class="credit">
-          © 2019 All Rights Reserved By <a href="https://tanvir-s-portfolio.netlify.app/" target="_blank"> &nbsp; Developer Tanvir</a>
+          © 2019 All Rights Reserved By
+          <a href="https://tanvir-s-portfolio.netlify.app/" target="_blank">
+            &nbsp; Developer Tanvir</a
+          >
         </p>
       </div>
     </section>
