@@ -2,6 +2,8 @@ const navToggler = document.querySelector('.nav-toggler');
 const navLink = document.querySelector('.nav__link');
 
 const icon = navToggler.querySelector('.fa-bars')
+
+const Home = document.querySelector('.home');
 //open and close function  
 navToggler.addEventListener('click', function () {
     navLink.classList.toggle('toggler-open');

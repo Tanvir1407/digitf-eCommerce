@@ -97,6 +97,7 @@ a:is(:link, :active, :visited).active {
 .carousel__box {
   position: relative;
 }
+
 .play__button {
   position: absolute;
   bottom: 43%;
@@ -552,7 +553,6 @@ a:is(:link, :active, :visited).active {
     background-repeat: no-repeat;
     overflow: hidden;
     background-position: left;
-    z-index: -10;
   }
   .hero__section::after{
     content: "";
@@ -563,11 +563,14 @@ a:is(:link, :active, :visited).active {
     height: 100%;
     background-image: url("images/hero-side-bg.png");
     background-size: cover;
-    z-index: -1;
+
   }
-  .carousel-item {
+  .carousel__box{
+    z-index: 99999;
+  }
+  .item {
     padding: 100px;
-    display: flex !important;
+    display: flex ;
     justify-content: space-between;
   }
   .card__info{
@@ -604,6 +607,24 @@ a:is(:link, :active, :visited).active {
     border: 0px solid #27cd77;
     padding: 15px 20px;
     border-radius: 50%;
+    z-index: 1000;
+  }
+ .header{
+    position: relative;
+    z-index: 99999;
+  }
+  .nav__link{
+    height: 0;
+  }
+  .nav__link ul {
+    display: flex;
+    position: absolute;
+    top: 5px;
+    left: 200px;
+  }
+  .nav__link li a{
+    padding: 0 20px;
+    font-weight: 500;
   }
 
   .about__container,
