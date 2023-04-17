@@ -178,7 +178,7 @@
       ---------------- about section start --------------------
     -------------------------------------------------->
     <section class="about__container row align-items-lg-center">
-      <div class="details__box col-lg-6">
+      <div class="details__box col-md-6">
         <h2>About Us</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
@@ -188,7 +188,7 @@
           eveniet? Odit, expedita! Accusantium ut, quia maxime magni nobis eos
           nulla.
         </p>
-        <button class="btn black_btn">Read More</button>
+        <button class="btn black_btn mb-5">Read More</button>
       </div>
       <div class="details__img col-md-6">
         <img src="/images/about-img.png" />
@@ -204,7 +204,7 @@
     <section class="categories">
       <h2>Trending Categories</h2>
       <div class="categories__box row align-items-lg-center">
-        <div class="col-lg-6 tab__container">
+        <div class="col-md-6 tab__container">
           <div class="tab__box">
             <div class="tab__number">
               <h5>01</h5>
@@ -235,7 +235,7 @@
           </div>
         </div>
         <!--Trending Pictures Box-->
-        <div class="col-lg-6 trending_img_box">
+        <div class="col-md-6 trending_img_box">
           <div class="box_1">
             <img src="/images/t-1.jpg" alt="" />
             <img src="/images/t-2.jpg" alt="" />
@@ -255,8 +255,8 @@
     <!-----------------------------------------------
     ---------latest Collection section---------------
     ------------------------------------------------>
-    <section class="new_collection_section row align-items-lg-center">
-      <div class="discount_text col-lg-6">
+    <section class="new_collection_section row align-items-md-center">
+      <div class="discount_text col-md-6">
         <h1>
           The Latest Collection
           <span class="new_collection_highlighted d-block"
@@ -265,7 +265,7 @@
         </h1>
         <button class="btn black_btn">Buy Now</button>
       </div>
-      <div class="discount_features_img col-lg-6">
+      <div class="discount_features_img col-md-6">
         <img src="/images/discount-img.png" alt="" />
       </div>
     </section>
@@ -278,8 +278,9 @@
     ----------------------------------------------->
     <section class="brand_features_section">
       <h1>Featured Brands</h1>
-      <div class="featured__brands">
-        <div class="box">
+      <div class="featured__brands row">
+        <div class="col-md-6 col-lg-3">
+          <div class="box ">
           <a href="#">
             <div class="img_box">
               <img src="/images/slider-img.png" alt="" />
@@ -290,8 +291,10 @@
             </div>
           </a>
           <p class="new_tag">New</p>
+          </div>
         </div>
-        <div class="box">
+        <div class="col-md-6 col-lg-3">
+          <div class="box">
           <a href="#">
             <div>
               <img src="/images/slider-img.png" alt="" />
@@ -302,7 +305,9 @@
             </div>
           </a>
         </div>
-        <div class="box">
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="box">
           <a href="#">
             <div>
               <img src="/images/slider-img.png" alt="" />
@@ -313,7 +318,9 @@
             </div>
           </a>
         </div>
-        <div class="box">
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="box">
           <a href="#">
             <div>
               <img src="/images/slider-img.png" alt="" />
@@ -323,6 +330,7 @@
               <h5>chair</h5>
             </div>
           </a>
+        </div>
         </div>
       </div>
       <div class="btn_more">
@@ -338,8 +346,8 @@
     ------------------------------------------------>
     <section class="contact__section">
       <h1>Contact Us</h1>
-      <div class="row align-items-lg-center">
-        <form class="col-lg-6 p-lg-5">
+      <div class="row align-items-md-center">
+        <form class="col-md-6 p-lg-5">
           <input type="text" placeholder="Name" />
           <input type="email" placeholder="Email" />
           <input type="tel" placeholder="phone" />
@@ -349,7 +357,7 @@
 
         <!--The div element for the map -->
         <iframe
-          class="col-lg-6"
+          class="col-md-6"
           height="350"
           style="border: 0"
           loading="lazy"
@@ -364,11 +372,14 @@
      -----------contact Form end-------------------
     ------------------------------------------------>
 
-    <!-- Testimonial section start -->
+    <!-----------------------------------------------
+    ----------Testimonial section start--------------
+    ------------------------------------------------>
     <section class="testimonial_section">
       <h1>Testimonial</h1>
-      <div class="testimonial_box">
-        <div class="testimonial__card">
+      <div class="testimonial_box row">
+        <div class="col-md-6">
+          <div class="testimonial__card">
           <div class="head">
             <div>
               <img src="/images/client-1.png" />
@@ -393,7 +404,9 @@
             />
           </div>
         </div>
-        <div class="testimonial__card">
+        </div>
+        <div class="col-md-6">
+          <div class="testimonial__card">
           <div class="head">
             <div>
               <img src="/images/client-2.png" />
@@ -418,11 +431,16 @@
             />
           </div>
         </div>
+        </div>
       </div>
     </section>
-    <!-- Testmonial section end -->
+    <!-----------------------------------------------
+    ------------Testmonial section end---------------
+    ------------------------------------------------>
 
-    <!-- Footer section start -->
+    <!-----------------------------------------------
+    -------------Footer section start----------------
+    ------------------------------------------------>
     <section class="footer__section">
       <div class="footer__info">
         <div class="footer__header">
@@ -496,7 +514,9 @@
         </p>
       </div>
     </section>
-    <!-- Footer section end -->
+    <!----------------------------------------------
+    -----------Footer section end-------------------
+    ----------------------------------------------->
   </body>
 
   <script src="/script.js"></script>

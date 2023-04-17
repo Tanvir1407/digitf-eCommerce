@@ -296,7 +296,7 @@ a:is(:link,:active,:visited).active{
     background-color: #f1f1f2;
     padding-top: 70px;
     padding-bottom: 30px;
-    margin: 30px 10px 0 10px;
+    margin: 20px;
 }
 .box:hover{
     background-color: #24d278;
@@ -572,13 +572,8 @@ a:is(:link,:active,:visited).active{
     .brand_features_section{
        margin: 0 100px;
     }
-    .featured__brands{
-        display: flex;
-        justify-content: center;
-    }
     .featured__brands .box{
-        padding-left: 25px;
-        padding-right: 25px;
+        margin: 0 !important;
     }
 
     .contact__section{
