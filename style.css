@@ -1,4 +1,6 @@
-/* root design */
+/***************************************
+*********** root design ****************
+****************************************/
 * {
   box-sizing: border-box;
   padding: 0;
@@ -18,9 +20,37 @@
 .black_btn {
   background-color: rgba(0, 0, 0, 0.87);
 }
-/* root design */
+/******************************************
+************ root design ******************
+******************************************/
 
-/* hero area */
+
+ /******************************
+ ******* repeated code *********/
+.details__box h2 ,.categories h2,.testimonial_section h1 ,.brand_features_section > h1, .contact__section h1{
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.2;
+  font-family: sans-serif;
+  position: relative;
+}
+.details__box h2::before,.testimonial_section h1::before ,.categories h2::before,.contact__section h1::before ,.brand_features_section > h1::before{
+  content: "";
+  width: 60px;
+  height: 3px;
+  position: absolute;
+  top: 50%;
+  right: -5px;
+  background-color: #24d278;
+  transform: translate(100%, -50%);
+}
+ /****** repeated code**********
+ *******************************/
+
+
+/**************************************
+**********hero area start *************/
 header {
   padding: 10px;
 }
@@ -68,7 +98,9 @@ a:is(:link, :active, :visited).active {
 .nav__right {
   visibility: hidden;
 }
-/************ video style***************/
+/*************************
+****** video style********
+**************************/
 .video__box{
   display: none;
   position: absolute;
@@ -93,6 +125,9 @@ a:is(:link, :active, :visited).active {
   position: absolute;
   right: 0;
 }
+/*****************************
+********Video Style***********
+******************************/
 .card__info {
   text-align: center;
   padding-bottom: 80px;
@@ -146,33 +181,16 @@ a:is(:link, :active, :visited).active {
   height: 20px;
   width: 15px;
 }
-/* hero area */
+/************hero area end*************
+**************************************/
 
-/* about section design */
+/***************************************
+********about section start*************/
 .about__container {
   padding-top: 90px;
   padding-bottom: 90px;
   margin-left: 20px;
   margin-right: 20px;
-}
-
-.details__box h2 {
-  display: inline-block;
-  font-size: 2rem;
-  font-weight: 500;
-  line-height: 1.2;
-  font-family: sans-serif;
-  position: relative;
-}
-.details__box h2::before {
-  content: "";
-  width: 60px;
-  height: 3px;
-  position: absolute;
-  top: 50%;
-  right: -5px;
-  background-color: #24d278;
-  transform: translate(100%, -50%);
 }
 .details__box p {
   margin-top: 20px;
@@ -186,30 +204,14 @@ a:is(:link, :active, :visited).active {
 .details__img img {
   width: 100%;
 }
-/* about section design */
+/*************about section end*************
+********************************************/
 
-/* categories section start*/
+/*******************************************
+**********categories section start**********/
 .categories {
   padding: 80px 20px;
   background-color: #f4f5f7;
-}
-.categories h2 {
-  display: inline-block;
-  font-size: 2rem;
-  font-weight: 500;
-  line-height: 1.2;
-  font-family: sans-serif;
-  position: relative;
-}
-.categories h2::before {
-  content: "";
-  width: 40px;
-  height: 3px;
-  position: absolute;
-  top: 50%;
-  right: -5px;
-  background-color: #24d278;
-  transform: translate(100%, -50%);
 }
 .tab__container {
   margin-top: 20px;
@@ -255,9 +257,11 @@ a:is(:link, :active, :visited).active {
   margin: 20px;
   box-shadow: 5px 5px 8px;
 }
-/* categories section end*/
+/*********categories section end************
+********************************************/
 
-/* Latest collection start*/
+/*******************************************
+**********Latest collection start***********/
 .new_collection_section {
   padding-top: 50px;
 }
@@ -279,9 +283,11 @@ a:is(:link, :active, :visited).active {
 .discount_features_img img {
   width: 100%;
 }
-/* Latest collection end*/
+/***********Latest collection end***********
+********************************************/
 
-/* featured__brands start */
+/********************************************
+************featured__brands start***********/
 .brand_features_section {
   margin: 70px 20px;
 }
@@ -291,26 +297,7 @@ a:is(:link, :active, :visited).active {
 .featured__brands > button {
   margin-top: 50px;
 }
-.brand_features_section > h1 {
-  left: 0 !important;
-  display: inline-block;
-  font-size: 2rem;
-  font-weight: 500;
-  line-height: 1.2;
-  font-family: sans-serif;
-  position: relative;
-}
-.brand_features_section h1::before {
-  content: "";
-  width: 60px;
-  height: 3px;
-  position: absolute;
-  top: 50%;
-  right: -5px;
-  background-color: #24d278;
-  transform: translate(100%, -50%);
-}
-/* featured__brands end */
+
 .featured__brands .box {
   position: relative;
   text-align: center;
@@ -351,27 +338,15 @@ a:is(:link, :active, :visited).active {
   text-align: center;
   padding-top: 40px;
 }
-/* contact form start  */
+/***********featured__brands end*************
+*********************************************/
+
+
+/********************************************
+************contact form start***************/
+
 .contact__section {
   margin: 70px 20px;
-}
-.contact__section h1 {
-  display: inline-block;
-  font-size: 2rem;
-  font-weight: 500;
-  line-height: 1.2;
-  font-family: sans-serif;
-  position: relative;
-}
-.contact__section h1::before {
-  content: "";
-  width: 60px;
-  height: 3px;
-  position: absolute;
-  top: 50%;
-  right: -5px;
-  background-color: #24d278;
-  transform: translate(100%, -50%);
 }
 .contact__section form {
   margin: 50px 0;
@@ -393,32 +368,15 @@ a:is(:link, :active, :visited).active {
 .contact__section input:focus {
   outline: none;
 }
-/* contact form end  */
+/*************contact form end**************
+********************************************/
 
-/* Testimonial section start */
+/********************************************
+*********Testimonial section start***********/
+
 .testimonial_section {
   margin-top: 50px;
   margin-bottom: 100px;
-}
-.testimonial_section h1 {
-  display: inline-block;
-  font-size: 2rem;
-  font-weight: 500;
-  line-height: 1.2;
-  font-family: sans-serif;
-  position: relative;
-  margin-bottom: 30px;
-  margin-left: 20px;
-}
-.testimonial_section h1::before {
-  content: "";
-  width: 60px;
-  height: 3px;
-  position: absolute;
-  top: 50%;
-  right: -5px;
-  background-color: #24d278;
-  transform: translate(100%, -50%);
 }
 .testimonial__card {
   padding: 20px 20px;
@@ -466,9 +424,12 @@ a:is(:link, :active, :visited).active {
   color: #24d278;
 }
 
-/* Testimonial section end */
+/***********Testimonial section end*************
+************************************************/
 
-/* footer section  */
+/***********************************************
+**************footer section start*************/
+
 .footer__section {
   text-align: center;
 }
@@ -556,9 +517,14 @@ a:is(:link, :active, :visited).active {
 .credit a {
   text-decoration: none;
 }
-/* footer section end */
+/************* footer section end***************
+************************************************/
 
-/******************** responsive part *********************/
+/************************************** 
+********responsive part start *********
+***************************************/
+
+
 /*play button responsive for tab*/
 @media only screen and (min-width: 400px) and (max-width: 767px) {
   .play__button {
@@ -717,3 +683,6 @@ a:is(:link, :active, :visited).active {
     text-align: start;
   }
 }
+/************************************** 
+********responsive part end ***********
+***************************************/
